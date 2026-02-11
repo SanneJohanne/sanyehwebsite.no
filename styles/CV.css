@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Vampiro+One&family=Voltaire&display=swap');
+
+*{
+	background-color: #7A648E;
+	
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	background: #6E577E;
+	padding: 1em;
+	padding-top: 15px;
+	padding-bottom: 1em;
+	margin: 0em;
+	top: 0px;
+	position: sticky;
+	font-family: "Vampiro One", system-ui;
+	font-size: 20px;
+	z-index: 10;
+}
+	nav p{
+		background-color: #6E577E;
+	}
+	nav a:link {
+	color: #F7ECFF;
+	background: #6E577E;
+	padding-top: 12px;
+	text-decoration: none;
+
+	}
+	nav a:visited {
+		color: #F7ECFF;
+		background: #6E577E;
+		padding-top: 12px;
+	}
+	nav a:focus {
+		color: #F7ECFF;
+		padding-top: 12px;
+	}
+	nav a:hover {
+		color: #F7ECFF;
+		background: #675276;
+		padding-top: 12px;
+
+	}
+	nav a:active {
+		color: #F7ECFF;
+		background: #675276;
+		padding-top: 12px;
+	}
+	
+	h1{
+		text-align: center;
+		font-family: "Vampiro One";
+		font-size: 55px;
+		background-color:#7A648E;
+		margin-bottom: 10px;
+	}
+	
+	.content-row {
+		display: flex;
+		align-items: flex-start;
+		gap: 100px;
+		background-color: #7A648E;
+		padding: 1em;
+	}
+					.content-row p{
+					background-color:#7A648E;
+					}
+					
+					.content-row h2{
+					background-color:#7A648E;
+					}
+					.content-row h1{
+					background-color:#7A648E;
+					}
+					
+				.me{
+					width: 250px;
+					height: auto;
+				}
+				
+				.card p{
+					font-family: "Voltaire";
+					color: #F7ECFF;
+					font-size: 25px;
+					z-index:2;
+					background-color: #2e2e2e;
+					width: 400px;
+				}
+				
+				.card{
+					display: flex;
+					align-items: flex-start;
+					gap: 20px;
+					background-color: #2e2e2e;
+					padding: 2em;
+					width: 600px;
+					margin-left: 4em;
+					border: 5px solid #9DCC9E;
+					margin-top: 10px;
+				}
+				
+				.Aboutme{
+					font-family: "Vampiro One";
+					font-size: 40px;
+					text-align: left;
+					background-color:#7A648E;
+				}
+				
+				.aboutME{
+					color: #F7ECFF;
+					font-family: "Voltaire", system-ui;
+					font-size: 22px;
+					width: 450px;
+					background-color:#7A648E;
+					text-align: left;
+				}
+	
+	
+	
+	h2{
+		font-size: 40px;
+		font-family: "Vampiro One";
+		background-color:#87719E;
+		margin-left: 1em;
+	}
+		
+	h3{
+		font-size: 25px;
+		font-family: "Voltaire";
+		color: #9DCC9E;
+		background-color:#87719E;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		margin-left: 1em;
+	}		
+	
+	p{
+		font-family:"Voltaire";
+		font-size: 24px;
+		color:#F7ECFF;
+		background-color:#87719E;
+		margin-left: 1em;
+	}
+	
+	.education{
+		background-color:#87719E;
+		padding: 1em;
+	}
+	
+	.experience{
+		background-color: #2e2e2e;
+		padding: 1em;
+	}
+	
+		.experience p{
+			background-color: #2e2e2e;
+		}
+		
+		.experience h2{
+		background-color: #2e2e2e;
+		color: #F7ECFF;
+		}
+		.experience h3{
+		background-color: #2e2e2e;
+		}
+		
+	.technicalSkills{
+		background-color:#87719E;
+		padding:1em;
+	}
+		
+
+	.content-box{
+		background-color: #9DCC9E;
+		border-radius: 25px;
+		width: 300px;
+		height: 175px;
+		position: absolute;
+		right: 10em;
+	}
+	.content-box h3{
+		background-color: #9DCC9E;
+		border-radius: 25px;
+		color: #000000;
+		padding-top: 3px;
+	}
+	.content-box p{
+		background-color: #9DCC9E;
+		border-radius: 25px;
+		color: #eeeeee;
+		margin-bottom: 2px;
+	}
+	
+	.row{
+		display: flex;
+		gap: 2em;
+		background-color: #9DCC9E;
+		border-radius: 25px;
+	}
+	
+	.row p{
+		background-color: #9DCC9E;
+		color: #000000;
+		border-radius: 25px;
+		margin-top: 2px;
+		margin-bottom: 1em;
+	}
+		
+	.language{
+		background-color: #2e2e2e;
+		padding: 1em;
+
+	}
+	.LL{
+		display: flex;
+		background-color: #2e2e2e;
+		gap: 10em;
+	}
+	
+	.level{
+		display: flex;
+		background-color: #2e2e2e;
+		gap: 10em;
+		margin-left: 1em;
+	}
+	
+		.language h2{
+			background-color: #2e2e2e;
+			color: #F7ECFF;
+		}
+		.language h3{
+		background-color:#2e2e2e;
+		}
+	
+		.language p{
+			background-color:#2e2e2e;
+		}
+		
+		
+	.interests{
+		background-color:#87719E;
+		padding: 1em;
+	}
+	.interests h2{
+		margin-bottom: 10px;
+	}
+	
+	.list{
+		display: flex;
+		background-color: #87719E;
+		gap: 10em;
+		margin-top: 0px;
+	
+	}
+	
+	.character{
+		position: absolute;
+		right: 10px;
+		width: 250px;
+		background-color: #87719E;
+	}
+	
+	.reference{
+		background-color: #2e2e2e;
+		padding: 1em;
+	}
+	
+		.reference h2{
+			color: #F7ECFF;
+			background-color: #2e2e2e;
+		}
+		.reference p{
+			background-color: #2e2e2e;
+		}
+		
