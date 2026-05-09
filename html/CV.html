@@ -11,7 +11,7 @@
 
   <style>
 
-   
+    /* Remove default browser spacing */
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
@@ -37,7 +37,7 @@
     }
 
 
-  
+    /* ── Navigation ── */
 
     nav {
       position: sticky;
@@ -64,19 +64,19 @@
     }
 
 
-    
+    /* ── Page title ── */
 
     .page-title {
-      background-color: #87719E;
       font-family: "Vampiro One", cursive;
-      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-size: clamp(2rem, 5vw, 3rem);
       text-align: center;
       padding: 40px 20px 20px;
       color: #1a1a1a;
+      background-color: #87719E;
     }
 
 
-  
+    /* ── Profile card ── */
 
     .profile {
       background-color: #87719E;
@@ -86,7 +86,6 @@
       padding: 20px 60px 40px;
     }
 
- 
     .profile__card {
       display: flex;
       align-items: flex-start;
@@ -110,7 +109,6 @@
       line-height: 2;
     }
 
-
     .profile__about {
       flex: 1;
     }
@@ -129,21 +127,17 @@
     }
 
 
-   
+    /* ── Shared section styles ── */
 
-    /* Purple sections */
     .section-purple {
       background-color: #87719E;
       padding: 40px 60px;
-      position: relative;
     }
 
-   
     .section-dark {
       background-color: #2e2e2e;
       padding: 40px 60px;
     }
-
 
     .section-purple h2,
     .section-dark h2 {
@@ -153,11 +147,12 @@
       color: #F7ECFF;
     }
 
-   
+    /* FIX 1: Each entry is a flex row — year on left, description on right */
     .entry {
       display: flex;
+      flex-direction: row;
       gap: 24px;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       align-items: baseline;
     }
 
@@ -165,7 +160,8 @@
       font-size: 18px;
       color: #9DCC9E;
       font-weight: bold;
-      min-width: 140px;
+      /* Fixed width so all descriptions line up neatly */
+      min-width: 160px;
       flex-shrink: 0;
     }
 
@@ -175,8 +171,9 @@
     }
 
 
-    
+    /* ── Technical Skills ── */
 
+    /* FIX 2: Skills layout uses normal flow — no absolute positioning */
     .skills-layout {
       display: flex;
       gap: 60px;
@@ -201,12 +198,14 @@
       font-weight: bold;
     }
 
-  
+    /* Green coding box sits next to software skills — no absolute */
     .skills__coding {
       background-color: #9DCC9E;
       border-radius: 16px;
       padding: 20px 28px;
       flex-shrink: 0;
+      /* Push it down to align roughly with the list */
+      margin-top: 36px;
     }
 
     .skills__coding h3 {
@@ -234,7 +233,7 @@
     }
 
 
-    /*Languages*/
+    /* ── Languages ── */
 
     .language-grid {
       display: grid;
@@ -256,7 +255,7 @@
     }
 
 
-    /*Interests*/
+    /* ── Interests ── */
 
     .interests-grid {
       display: flex;
@@ -271,17 +270,21 @@
     }
 
 
-    /*Character illustration*/
+    /* ── Character illustration ── */
+    /* FIX 3: No absolute — sits inside its section naturally on the right */
+    .character-wrap {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -60px;
+      pointer-events: none;
+    }
 
     .character {
-      position: absolute;
-      right: 40px;
-      bottom: 0;
       width: 200px;
     }
 
 
-    /*Footer*/
+    /* ── Footer ── */
 
     footer {
       background-color: #2e2e2e;
@@ -312,7 +315,7 @@
   <!-- Page title -->
   <h1 class="page-title">CV – SANNE JOHANNE HERMANSEN</h1>
 
-  <!-- Profile: photo card + about me -->
+  <!-- Profile -->
   <section class="profile">
     <div class="profile__card">
       <img class="profile__photo" src="../images/sanyeh.jpeg" alt="Photo of Sanne">
@@ -397,6 +400,7 @@
         <p><span>Reaper</span> — Sound design and music production</p>
       </div>
 
+      <!-- Coding box sits next to software skills, no absolute positioning -->
       <div class="skills__coding">
         <h3>CODING SKILLS</h3>
         <p>Basic knowledge of:</p>
@@ -407,9 +411,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Character illustration -->
-    <img class="character" src="../images/Character.png" alt="Character illustration">
   </section>
 
   <!-- Language -->
@@ -458,12 +459,17 @@
         — Cats!
       </p>
     </div>
+
+    <!-- Character illustration floated to the right naturally -->
+    <div class="character-wrap">
+      <img class="character" src="../images/Character.png" alt="Character illustration">
+    </div>
   </section>
 
   <!-- Reference -->
   <section class="section-dark">
     <h2>REFERENCE</h2>
-    <p style="font-size: 1.1rem; color: #F7ECFF;">Uma Melum Stav: +47 451 37 464</p>
+    <p>Uma Melum Stav: +47 451 37 464</p>
   </section>
 
   <footer>
@@ -472,3 +478,4 @@
 
 </body>
 </html>
+
