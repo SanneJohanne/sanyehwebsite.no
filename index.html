@@ -11,13 +11,13 @@
 
   <style>
 
-	{
+    /* Remove default browser spacing */
+    *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-    
     body {
       background-color: #87719E;
       color: #F7ECFF;
@@ -25,20 +25,18 @@
       font-size: 18px;
     }
 
-    
     a {
       text-decoration: none;
       color: inherit;
     }
 
-    
     img {
       display: block;
       max-width: 100%;
     }
 
 
-    
+    /* ── Navigation ── */
 
     nav {
       position: sticky;
@@ -65,6 +63,9 @@
     }
 
 
+    /* ── Hero ── */
+
+    /* The hero fills its content tightly — no extra height */
     .hero {
       display: flex;
       align-items: flex-end;
@@ -73,23 +74,27 @@
       background-color: #87719E;
     }
 
+    /* Photo is tall to match the mockup */
     .hero__photo {
       width: 220px;
-      height: 260px;
+      height: 320px;
       object-fit: cover;
       object-position: top;
       border-radius: 12px;
       flex-shrink: 0;
+      /* Align to bottom of hero so it sits flush with the dark section */
+      align-self: flex-end;
     }
 
     .hero__text {
       flex: 1;
       text-align: center;
+      /* Push text up a bit so it sits in the middle of the hero */
+      padding-bottom: 40px;
     }
 
     .hero__text h1 {
       font-family: "Vampiro One", cursive;
-      
       font-size: clamp(3rem, 8vw, 5.5rem);
       color: #1a1a1a;
       line-height: 1;
@@ -97,19 +102,19 @@
     }
 
     .hero__text p {
-      
       font-size: clamp(1rem, 2.5vw, 1.4rem);
       color: #F7ECFF;
     }
 
-    
+    /* Green social links card */
     .hero__socials {
       background-color: #9DCC9E;
       border-radius: 16px;
       padding: 16px 20px;
       width: 210px;
       flex-shrink: 0;
-      margin-bottom: 24px;
+      /* Sit in the middle height-wise */
+      margin-bottom: 60px;
     }
 
     .hero__socials a {
@@ -137,6 +142,7 @@
       padding: 4px 0px;
     }
 
+    /* Character sits at the very bottom of the hero, touching the dark section */
     .hero__character {
       width: 160px;
       flex-shrink: 0;
@@ -144,7 +150,7 @@
     }
 
 
-    
+    /* ── Welcome ── */
 
     .welcome {
       background-color: #2e2e2e;
@@ -167,7 +173,7 @@
     }
 
 
-    
+    /* ── My Work ── */
 
     .my-work {
       background-color: #87719E;
@@ -182,7 +188,7 @@
       margin-bottom: 40px;
     }
 
-    
+    /* 3 column grid */
     .work-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -191,7 +197,6 @@
       margin: 0 auto;
     }
 
-    
     .work-card {
       position: relative;
       border-radius: 16px;
@@ -206,7 +211,6 @@
       object-fit: cover;
     }
 
-    
     .work-card::after {
       content: "";
       position: absolute;
@@ -219,7 +223,6 @@
       background: rgba(0, 0, 0, 0.5);
     }
 
-    
     .work-card__label {
       position: absolute;
       inset: 0;
@@ -234,7 +237,7 @@
     }
 
 
-    
+    /* ── Footer ── */
 
     footer {
       background-color: #2e2e2e;
@@ -280,17 +283,16 @@
         </svg>
         SanneJohanne
       </a>
-
       <a href="https://sanyeh.itch.io/" target="_blank">
         <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M3 2C1.9 2.6 0 5.5 0 6.1v.9c0 1.4 1.2 2.5 2.5 2.5S5 8.4 5 7c0 1.4 1.1 2.5 2.5 2.5S10 8.4 10 7c0 1.4 1.1 2.5 2.5 2.5S15 8.4 15 7c0 1.4 1.1 2.5 2.5 2.5S20 8.4 20 7c0 1.4 1.1 2.5 2.5 2.5S25 8.4 25 7v-.9C25 5.5 23.1 2.6 22 2 19.8 1 4.2 1 3 2zM8 12v8h8v-8H8zm-2 0H3v4c.3.1 1.1.5 2 .7V12zm12 0v4.7c.9-.2 1.7-.6 2-.7V12h-2z"/>
         </svg>
         Sanyeh
       </a>
-
       <p class="mail-text">✉ Sanne012009@live.no</p>
     </div>
 
+    <!-- Character sits at bottom of hero, touching the dark welcome section -->
     <img class="hero__character" src="images/Character.png" alt="Character illustration">
   </section>
 
@@ -322,27 +324,22 @@
         <img src="images/Parallax_Layout.png" alt="Games">
         <span class="work-card__label">GAMES</span>
       </a>
-
       <a href="Prototypes.html" class="work-card">
         <img src="images/QuackAttack2.png" alt="Prototypes">
         <span class="work-card__label">PROTOTYPES</span>
       </a>
-
       <a href="OngoingProjects.html" class="work-card">
         <img src="images/coverart.jpeg" alt="Ongoing Projects">
         <span class="work-card__label">ONGOING PROJECTS</span>
       </a>
-
       <a href="2dArt.html" class="work-card">
         <img src="images/2DArt2.png" alt="2D Art">
         <span class="work-card__label">2D ART</span>
       </a>
-
       <a href="3dArt.html" class="work-card">
         <img src="images/HerbalQuestScreen.png" alt="3D Art">
         <span class="work-card__label">3D ART</span>
       </a>
-
       <a href="Music.html" class="work-card">
         <img src="images/HerbalQuestfront.png" alt="Music">
         <span class="work-card__label">MUSIC</span>
@@ -356,3 +353,4 @@
 
 </body>
 </html>
+
