@@ -1,114 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanyeh – Game Designer</title>
 
-<Head>
-	<!-- Styles:-->
-	<link href="styles/NYEH.css" rel="stylesheet" media="screen">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&family=Voltaire&display=swap" rel="stylesheet">
 
-	<!--font import:-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Vampiro+One&family=Voltaire&display=swap" rel="stylesheet">
-	
-</Head>
-<Body>
+  <style>
 
-	<nav>
-		<a href="NYEH.html"> Sanyeh</a>
-		<a href="MyGames.html"> My Games</a>
-		<a href="Prototypes.html"> Prototypes</a>
-		<a href=".html"> 2D Art</a>
-		<a href=".html"> 3D Art</a>
-		<a href=".html"> Music</a>
-		<a href=".html"> Ongoing Projects</a>
-		<a href="html/CV.html">CV</a>
-	</nav>
-	
-	<div class="content-row">
-		<img class="me" src="images/sanyeh.jpeg" alt="Picture of me.">
+	{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-		<div class="content-text">
-			<h1>SANYEH</h1>
-			<p>A game designer with a passion for shaping games into art and letting emotion drive the journey.</p>
-		</div>
+    
+    body {
+      background-color: #87719E;
+      color: #F7ECFF;
+      font-family: "Voltaire", sans-serif;
+      font-size: 18px;
+    }
 
-		<div class="content-box">
-			
-				<p>
-					Instagram: <a href="https://www.instagram.com/sannejohanne/">SanneJohanne</a>
-				</p>
-			
-		
-			
-				<p>
-					Itch.io: <a href="https://sanyeh.itch.io/">Sanyeh</a>
-				</p>
-			
-		
-			
-				<p>
-					Mail: Sanne012009@live.no
-				</p>
-		</div>
-			<img class="character" src="images/Character.png" alt="character.">
-	</div>
-	
-	
-	<section class="welcome">
-		<h2>WELCOME TO MY PAGE</h2>
-			<p>
-				I’m a game design student at Kristiania University College in Oslo, passionate about creating interactive experiences that combine art, music, and storytelling. My love for creativity started early, exploring theatre, music, and drawing,  and it continues to shape the way I approach games today.
-			</p>
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-			<p>
-				I’m fascinated by the inner world and how our emotions respond to the world around us. I aim to create abstract experiences that guide players toward the emotional truths those external experiences evoke, moments of reflection, connection, and imagination.
-			</p>
+    
+    img {
+      display: block;
+      max-width: 100%;
+    }
 
-			<p>
-				Game design gives me a way to combine all of this: visual art, sound, and interactivity, working together to craft meaningful, emotional journeys that players can feel and explore for themselves.
-			</p>
-	
-	</section>
-	
-	
-	<section class="Mywork">
-		<h2>
-			MY WORK
-		</h2>
-		
-		<a href="MyGames.html" class="game-card">
-		<img class="gamepic" src="images/Parallax_Layout.png" alt="Games">
-		<span class="Games">GAMES</span>
-		</a>
-		
-		<a href="Prototypes.html" class="prototype-card">
-		<img class="prototypepic" src="images/QuackAttack2.png" alt="Screenshot of prototype: Quack Attack">
-		<span class="Prototype">PROTOTYPES</span>
-		</a>
-		
-		<a href="OngoingProjects.html" class="ongoingprojects-card">
-		<img class="ongoingprojectspic" src="images/coverart.jpeg" alt="">
-		<span class="OngoingProjects">ONGOING PROJECTS</span>
-		</a>
-		
-		<a href="2dArt.html" class="TwoDArt-card">
-		<img class="twodpic" src="images/2DArt2.png" alt="">
-		<span class="twoDArt">2D ART</span>
-		</a>
-		
-		<a href="3dArt.html" class="ThreeDArt-card">
-		<img class="threedpic" src="images/HerbalQuestScreen.png" alt="">
-		<span class="threeDArt">3D ART</span>
-		</a>
-		
-		<a href="Music.html" class="Music-card">
-		<img class="musicpic" src="images/HerbalQuestfront.png" alt="">
-		<span class="Music">MUSIC</span>
-		</a>
-	</section>
 
-	<Footer>
-		Sanne Hermansen, 2025
-	</Footer>
+    
 
-</Body>
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #6E577E;
+      padding: 12px 24px;
+      font-family: "Vampiro One", cursive;
+      font-size: 18px;
+    }
+
+    nav a {
+      color: #F7ECFF;
+      padding: 6px 8px;
+      border-radius: 4px;
+    }
+
+    nav a:hover {
+      background-color: #7A648E;
+      color: #9DCC9E;
+    }
+
+
+    .hero {
+      display: flex;
+      align-items: flex-end;
+      gap: 30px;
+      padding: 30px 30px 0px 30px;
+      background-color: #87719E;
+    }
+
+    .hero__photo {
+      width: 220px;
+      height: 260px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+
+    .hero__text {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero__text h1 {
+      font-family: "Vampiro One", cursive;
+      
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      color: #1a1a1a;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .hero__text p {
+      
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      color: #F7ECFF;
+    }
+
+    
+    .hero__socials {
+      background-color: #9DCC9E;
+      border-radius: 16px;
+      padding: 16px 20px;
+      width: 210px;
+      flex-shrink: 0;
+      margin-bottom: 24px;
+    }
+
+    .hero__socials a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #1a1a1a;
+      font-size: 17px;
+      padding: 4px 0px;
+    }
+
+    .hero__socials a:hover {
+      opacity: 0.7;
+    }
+
+    .hero__socials .icon {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    .hero__socials .mail-text {
+      color: #1a1a1a;
+      font-size: 16px;
+      padding: 4px 0px;
+    }
+
+    .hero__character {
+      width: 160px;
+      flex-shrink: 0;
+      align-self: flex-end;
+    }
+
+
+    
+
+    .welcome {
+      background-color: #2e2e2e;
+      padding: 50px 100px;
+      text-align: center;
+    }
+
+    .welcome h2 {
+      font-family: "Vampiro One", cursive;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #F7ECFF;
+      margin-bottom: 30px;
+    }
+
+    .welcome p {
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      color: #F7ECFF;
+      max-width: 760px;
+      margin: 0 auto 20px auto;
+    }
+
+
+    
+
+    .my-work {
+      background-color: #87719E;
+      padding: 50px 30px 60px 30px;
+      text-align: center;
+    }
+
+    .my-work h2 {
+      font-family: "Vampiro One", cursive;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #1a1a1a;
+      margin-bottom: 40px;
+    }
+
+    
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    
+    .work-card {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      display: block;
+    }
+
+    .work-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    
+    .work-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 16px;
+    }
+
+    .work-card:hover::after {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    
+    .work-card__label {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: clamp(1rem, 2.5vw, 1.8rem);
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 0px 2px 8px rgba(0,0,0,0.7);
+    }
+
+
+    
+
+    footer {
+      background-color: #2e2e2e;
+      color: #F7ECFF;
+      font-family: "Voltaire", sans-serif;
+      font-size: 18px;
+      text-align: center;
+      padding: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Sanyeh</a>
+    <a href="MyGames.html">My Games</a>
+    <a href="Prototypes.html">Prototypes</a>
+    <a href="2dArt.html">2D Art</a>
+    <a href="3dArt.html">3D Art</a>
+    <a href="Music.html">Music</a>
+    <a href="OngoingProjects.html">Ongoing Projects</a>
+    <a href="html/CV.html">CV</a>
+  </nav>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <img class="hero__photo" src="images/sanyeh.jpeg" alt="Photo of Sanne">
+
+    <div class="hero__text">
+      <h1>SANYEH</h1>
+      <p>A game designer with a passion for shaping games into art and letting emotion drive the journey.</p>
+    </div>
+
+    <div class="hero__socials">
+      <a href="https://www.instagram.com/sannejohanne/" target="_blank">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+        </svg>
+        SanneJohanne
+      </a>
+
+      <a href="https://sanyeh.itch.io/" target="_blank">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3 2C1.9 2.6 0 5.5 0 6.1v.9c0 1.4 1.2 2.5 2.5 2.5S5 8.4 5 7c0 1.4 1.1 2.5 2.5 2.5S10 8.4 10 7c0 1.4 1.1 2.5 2.5 2.5S15 8.4 15 7c0 1.4 1.1 2.5 2.5 2.5S20 8.4 20 7c0 1.4 1.1 2.5 2.5 2.5S25 8.4 25 7v-.9C25 5.5 23.1 2.6 22 2 19.8 1 4.2 1 3 2zM8 12v8h8v-8H8zm-2 0H3v4c.3.1 1.1.5 2 .7V12zm12 0v4.7c.9-.2 1.7-.6 2-.7V12h-2z"/>
+        </svg>
+        Sanyeh
+      </a>
+
+      <p class="mail-text">✉ Sanne012009@live.no</p>
+    </div>
+
+    <img class="hero__character" src="images/Character.png" alt="Character illustration">
+  </section>
+
+  <!-- Welcome section -->
+  <section class="welcome">
+    <h2>WELCOME TO MY PAGE</h2>
+    <p>
+      I'm a game design student at Kristiania University College in Oslo, passionate about creating interactive
+      experiences that combine art, music, and storytelling. My love for creativity started early, exploring theatre,
+      music, and drawing, and it continues to shape the way I approach games today.
+    </p>
+    <p>
+      I'm fascinated by the inner world and how our emotions respond to the world around us. I aim to create
+      abstract experiences that guide players toward the emotional truths those external experiences evoke —
+      moments of reflection, connection, and imagination.
+    </p>
+    <p>
+      Game design gives me a way to combine all of this: visual art, sound, and interactivity, working together to
+      craft meaningful, emotional journeys that players can feel and explore for themselves.
+    </p>
+  </section>
+
+  <!-- My Work section -->
+  <section class="my-work">
+    <h2>MY WORK</h2>
+
+    <div class="work-grid">
+      <a href="MyGames.html" class="work-card">
+        <img src="images/Parallax_Layout.png" alt="Games">
+        <span class="work-card__label">GAMES</span>
+      </a>
+
+      <a href="Prototypes.html" class="work-card">
+        <img src="images/QuackAttack2.png" alt="Prototypes">
+        <span class="work-card__label">PROTOTYPES</span>
+      </a>
+
+      <a href="OngoingProjects.html" class="work-card">
+        <img src="images/coverart.jpeg" alt="Ongoing Projects">
+        <span class="work-card__label">ONGOING PROJECTS</span>
+      </a>
+
+      <a href="2dArt.html" class="work-card">
+        <img src="images/2DArt2.png" alt="2D Art">
+        <span class="work-card__label">2D ART</span>
+      </a>
+
+      <a href="3dArt.html" class="work-card">
+        <img src="images/HerbalQuestScreen.png" alt="3D Art">
+        <span class="work-card__label">3D ART</span>
+      </a>
+
+      <a href="Music.html" class="work-card">
+        <img src="images/HerbalQuestfront.png" alt="Music">
+        <span class="work-card__label">MUSIC</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    Sanne Hermansen, 2025
+  </footer>
+
+</body>
+</html>
