@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Vampiro+One&family=Voltaire&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    }
+
+section {
+    scroll-margin-top: 90px;
+}
+
+* {
+        box-sizing: border-box;
+    }
+
+
+    /* General page */
+
+    body {
+        margin: 0;
+        background-color: #1A1A1A;
+    }
+
+
+    /* Navigation */
+
+    nav.main-nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        padding: 15px 20px;
+        background-color: #87719E;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        font-family: 'Voltaire', sans-serif;
+        font-weight: bold;
+        color: #1A1A1A;
+        text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+    nav.main-nav {
+        overflow-x: auto;
+        white-space: nowrap;
+        }
+    }
+  
+    .home-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #F7ECFF;
+        text-decoration: none;
+    }
+
+    .home-link img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        margin: -10px;
+    }
+
+    .home-link span {
+        font-family: 'Vampiro One', cursive;
+        font-size: 1.5rem;
+    }
+    
+    .nav-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+     .nav-center a {
+        font-family: 'Voltaire', sans-serif;
+        font-weight: bold;
+        font-size: clamp(1rem, 1.5vw, 1.2rem);
+        color: #1A1A1A;
+        text-decoration: none;
+    }
+
+    .nav-center a:hover {
+        text-decoration: underline;
+    }
+
+	/* Hero */
+	.hero {
+		min-height: 300px;
+
+		padding: 50px 20px;
+
+		background-image: url("../images/J1MDHero.png");
+		background-size: cover;
+		background-position: center;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		text-align: center;
+	}
+
+
+    h1 {
+    font-family: 'Vampiro One', cursive;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: #F7ECFF;
+    text-align: center;
+    margin-top: 50px;
+    }
+    
+   /* Main */
+.project-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.project-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.project-row img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+.project-text h2 {
+    margin: 0 0 10px;
+
+    font-family: 'Voltaire', sans-serif;
+    font-size: 1.7rem;
+    color: #F7ECFF;
+}
+
+.project-text p {
+    margin: 0 0 15px;
+
+    font-family: 'Voltaire', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #F7ECFF;
+}
+
+    /* Button */
+.next-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    
+    padding: 12px 25px;
+
+    background-color: #9DCC9E;
+    color: #1A1A1A;
+
+    font-family: 'Voltaire', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    text-decoration: none;
+    border-radius: 2px;
+
+    transition: background-color 0.2s ease;
+}
+
+
+    /* Footer */
+
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer p {
+        font-family: 'Voltaire', sans-serif;
+        color: #F7ECFF;
+    }
