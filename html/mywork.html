@@ -131,13 +131,20 @@ section {
     text-align: center;
     margin-top: 50px;
     }
+
+    .hero {
+        padding-bottom: clamp(40px, 5vw, 50px);
+    }
     
 
     h2 {
-        font-family: 'Voltaire', sans-serif;
-        font-size: clamp(1.5rem, 3vw, 2rem);
-        color: #F7ECFF;
-        text-align: left;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+
+    font-family: 'Voltaire', sans-serif;
+    font-size: clamp(1.7rem, 3.5vw, 2.3rem);
+    color: #F7ECFF;
+    text-align: left;
     }
      /* Grid */
     .project-grid {
@@ -147,6 +154,12 @@ section {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
+    }
+
+    .project-card {
+        display: block;
+        color: inherit;
+        text-decoration: none;
     }
 
     .project-card img {
@@ -181,6 +194,24 @@ section {
     .project-grid {
         grid-template-columns: 1fr;
         }
+    }
+
+    #games {
+        background-color: #87719E;
+        padding-top: clamp(40px, 5vw, 50px);
+        padding-bottom: clamp(40px, 5vw, 50px);
+    }
+
+    #prototypes {
+        background-color: #1A1A1A;
+        padding-top: clamp(40px, 5vw, 50px);
+        padding-bottom: clamp(40px, 5vw, 50px);
+    }
+
+    #otherprojects {
+        background-color: #87719E;
+        padding-top: clamp(40px, 5vw, 50px);
+        padding-bottom: clamp(40px, 5vw, 50px);
     }
 
     /* Footer */
@@ -229,41 +260,41 @@ section {
             <h2>GAMES</h2>
             <div class="project-grid">
 
-            <article class="project-card">
+            <a href="J1MD.html" class="project-card">
                 <img src="../images/J1MD.png" alt="Project 1">
                 <h3>JUST ONE MORE DAY</h3>
                 <p>Psychological Horror, Pixel-art</p>
-            </article>
+            </a>
 
-            <article class="project-card">
+            <a href="trashpandaSW.html" class="project-card">
                 <img src="../images/TrashPandaSW.png" alt="Project 2">
                 <h3>TRASH PANDA STREETWARS</h3>
                 <p>Board Game</p>
-            </article>
+            </a>
 
-            <article class="project-card">
+            <a href="fjordfury.html" class="project-card">
                 <img src="../images/FjordFury.png" alt="Fjord Fury Project">
                 <h3>TROLLS VS VIKINGS - FJORD FURY</h3>
                 <p>Local Multiplayer - Racing</p>
-            </article>
+            </a>
 
-            <article class="project-card">
+            <a href="herbalquest.html" class="project-card">
                 <img src="../images/TheHerbalQuest.png" alt="Project 4">
                 <h3>THE HERBAL QUEST</h3>
                 <p>3D Platformer</p>
-            </article>
+            </a>
 
-            <article class="project-card">
+            <a href="fortniteproject.html" class="project-card">
                 <img src="../images/Fortnite.png" alt="Project 5">
                 <h3>DONT REMEMBER</h3>
                 <p>A short description of the project.</p>
-            </article>
+            </a>
 
-            <article class="project-card">
+            <a href="olsok.html" class="project-card">
                 <img src="../images/Olsok.png" alt="Project 6">
                 <h3>OLSOK</h3>
                 <p>Visual Novel</p>
-            </article>
+            </a>
 
     </div>
         </section>
@@ -272,35 +303,29 @@ section {
             <h2>PROTOTYPES</h2>
             <div class="project-grid">
 
-            <article class="project-card">
+            <a href="horror.html" class="project-card">
                 <img src="../images/PlaytestFriday.png" alt="Project 1">
                 <h3>PLAYTEST FRIDAY</h3>
                 <p>Uncanny, Horror</p>
-            </article>
+            </a>
 
-            <article class="project-card">
+            <a href="towerefense.html" class="project-card">
                 <img src="../images/PvsP.png" alt="Project 2">
                 <h3>PINEAPPLE VS PIZZA</h3>
                 <p>Tower Defense</p>
-            </article>
+            </a>
 
-            <article class="project-card">
+            <a href="shmups.html" class="project-card">
                 <img src="../images/QuackAttack.png" alt="Quack Attack Project">
                 <h3>QUACK ATTACK</h3>
                 <p>Shoot 'em up</p>
-            </article>
+            </a>
 
-            <article class="project-card">
+            <a href="incremental.html" class="project-card">
                 <img src="../images/CookieClicker.png" alt="Project 4">
                 <h3>COOKIE CLICKER KICKFLIPPER</h3>
                 <p>Incremental</p>
-            </article>
-
-            <article class="project-card">
-                <img src="../images/PLC.png" alt="Project 5">
-                <h3>PLC OVERRIDE - ELEVATOR CONTROL</h3>
-                <p>Hacking</p>
-            </article>
+            </a>
 
 
     </div>
@@ -310,34 +335,37 @@ section {
             <h2>OTHER PROJECTS</h2>
             <div class="project-grid">
 
-            <article class="project-card">
+            <a href="footballisland.html" class="project-card">
                 <img src="../images/FootballIsland.png" alt="Project 1">
                 <h3>FOOTBALL ISLAND - KING OF THE JUNGLE</h3>
                 <p>Game Concept for Football Island, Banijay </p>
-            </article>
+            </a>
 
-            <article class="project-card">
+            <a href="battlefieldtour.html" class="project-card">
                 <img src="../images/BFT.png" alt="Project 2">
                 <h3>CAMPIGN FOR BATTLEFIELD TOURS</h3>
                 <p>Omni-channel cross cultural campaign</p>
-            </article>
+            </a>
 
-            <article class="project-card">
+            <a href="buswisky.html" class="project-card">
                 <img src="../images/BUS.png" alt="Bus Wisky Project">
                 <h3>BUS WISKY - MARKETING PLAN</h3>
                 <p>How to attract the German Market</p>
-            </article>
+            </a>
 
-            <article class="project-card">
+            <a href="curio.html" class="project-card">
                 <img src="../images/Curio.png" alt="Project 4">
                 <h3>QUIZ FOR QURIO</h3>
                 <p>Personality Quiz for prospective students</p>
-            </article>
+            </a>
 
     </div>
         </section>
 
     </main>
+    <footer>    
+         <p>&copy; 2026 Sanne Johanne Hermansen</p>
+    </footer>
 
 </body>
 
