@@ -1,114 +1,416 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
-<Head>
-	<!-- Styles:-->
-	<link href="styles/NYEH.css" rel="stylesheet" media="screen">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!--font import:-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Vampiro+One&family=Voltaire&display=swap" rel="stylesheet">
-	
-</Head>
-<Body>
+<title>HomePage</title>
 
-	<nav>
-		<a href="NYEH.html"> Sanyeh</a>
-		<a href="MyGames.html"> My Games</a>
-		<a href="Prototypes.html"> Prototypes</a>
-		<a href=".html"> 2D Art</a>
-		<a href=".html"> 3D Art</a>
-		<a href=".html"> Music</a>
-		<a href=".html"> Ongoing Projects</a>
-		<a href="html/CV.html">CV</a>
-	</nav>
-	
-	<div class="content-row">
-		<img class="me" src="images/sanyeh.jpeg" alt="Picture of me.">
+<!-- Font import -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vampiro+One&family=Voltaire&display=swap" rel="stylesheet">
 
-		<div class="content-text">
-			<h1>SANYEH</h1>
-			<p>A game designer with a passion for shaping games into art and letting emotion drive the journey.</p>
-		</div>
 
-		<div class="content-box">
-			
-				<p>
-					Instagram: <a href="https://www.instagram.com/sannejohanne/">SanneJohanne</a>
-				</p>
-			
-		
-			
-				<p>
-					Itch.io: <a href="https://sanyeh.itch.io/">Sanyeh</a>
-				</p>
-			
-		
-			
-				<p>
-					Mail: Sanne012009@live.no
-				</p>
-		</div>
-			<img class="character" src="images/Character.png" alt="character.">
-	</div>
-	
-	
-	<section class="welcome">
-		<h2>WELCOME TO MY PAGE</h2>
-			<p>
-				I’m a game design student at Kristiania University College in Oslo, passionate about creating interactive experiences that combine art, music, and storytelling. My love for creativity started early, exploring theatre, music, and drawing,  and it continues to shape the way I approach games today.
-			</p>
+<style>
 
-			<p>
-				I’m fascinated by the inner world and how our emotions respond to the world around us. I aim to create abstract experiences that guide players toward the emotional truths those external experiences evoke, moments of reflection, connection, and imagination.
-			</p>
+    * {
+        box-sizing: border-box;
+    }
 
-			<p>
-				Game design gives me a way to combine all of this: visual art, sound, and interactivity, working together to craft meaningful, emotional journeys that players can feel and explore for themselves.
-			</p>
-	
-	</section>
-	
-	
-	<section class="Mywork">
-		<h2>
-			MY WORK
-		</h2>
-		
-		<a href="MyGames.html" class="game-card">
-		<img class="gamepic" src="images/Parallax_Layout.png" alt="Games">
-		<span class="Games">GAMES</span>
-		</a>
-		
-		<a href="Prototypes.html" class="prototype-card">
-		<img class="prototypepic" src="images/QuackAttack2.png" alt="Screenshot of prototype: Quack Attack">
-		<span class="Prototype">PROTOTYPES</span>
-		</a>
-		
-		<a href="OngoingProjects.html" class="ongoingprojects-card">
-		<img class="ongoingprojectspic" src="images/coverart.jpeg" alt="">
-		<span class="OngoingProjects">ONGOING PROJECTS</span>
-		</a>
-		
-		<a href="2dArt.html" class="TwoDArt-card">
-		<img class="twodpic" src="images/2DArt2.png" alt="">
-		<span class="twoDArt">2D ART</span>
-		</a>
-		
-		<a href="3dArt.html" class="ThreeDArt-card">
-		<img class="threedpic" src="images/HerbalQuestScreen.png" alt="">
-		<span class="threeDArt">3D ART</span>
-		</a>
-		
-		<a href="Music.html" class="Music-card">
-		<img class="musicpic" src="images/HerbalQuestfront.png" alt="">
-		<span class="Music">MUSIC</span>
-		</a>
-	</section>
 
-	<Footer>
-		Sanne Hermansen, 2025
-	</Footer>
+    /* General page */
 
-</Body>
+    body {
+        margin: 0;
+        background-color: #1A1A1A;
+    }
+
+
+    /* Navigation */
+
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        padding: 15px 20px;
+        background-color: #87719E;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        font-family: 'Voltaire', sans-serif;
+        font-weight: bold;
+        color: #1A1A1A;
+        text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+    nav {
+        overflow-x: auto;
+        white-space: nowrap;
+        }
+    }
+  
+    .home-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #F7ECFF;
+        text-decoration: none;
+    }
+
+    .home-link img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        margin: -10px;
+    }
+
+    .home-link span {
+        font-family: 'Vampiro One', cursive;
+        font-size: 1.5rem;
+    }
+    
+    .nav-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+     .nav-center a {
+        font-family: 'Voltaire', sans-serif;
+        font-weight: bold;
+        font-size: clamp(1rem, 1.5vw, 1.2rem);
+        color: #1A1A1A;
+        text-decoration: none;
+    }
+
+    .nav-center a:hover {
+        text-decoration: underline;
+    }
+
+    /* Hero title */
+
+    h1 {
+        margin: 0;
+
+        font-family: 'Vampiro One', cursive;
+        font-size: clamp(4rem, 10vw, 9rem);
+        line-height: 1.05;
+
+        color: #F7ECFF;
+        text-align: left;
+    }
+
+
+    /* Hero section */
+
+    .hero {
+        min-height: 500px;
+
+        padding-left: clamp(40px, 8vw, 150px);
+        padding-right: clamp(20px, 5vw, 100px);
+
+        background-image: url("images/Extended.png");
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+    /* Hero description */
+
+    .hero p {
+        max-width: 600px;
+
+        margin-top: 20px;
+
+        font-family: 'Voltaire', sans-serif;
+        font-size: clamp(1rem, 2vw, 1.3rem);
+        line-height: 1.5;
+
+        color: #F7ECFF;
+    }
+    .work-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+
+        background-color: #9DCC9E;
+        color: #1A1A1A;
+
+        font-family: 'Voltaire', sans-serif;
+        font-size: 1.1rem;
+        font-weight: bold;
+
+        text-decoration: none;
+        border-radius: 2px;
+
+        transition: background-color 0.2s ease;
+    }
+
+    .work-button:hover {
+        background-color: #90B390;
+    }
+
+
+    /* Contact box */
+    .contact-box {
+        position: relative;
+
+        width: min(400px, 85%);
+        aspect-ratio: 400 / 250;
+
+        margin-top: -120px;
+        margin-left: auto;
+        margin-right: clamp(60px, 10vw, 200px);
+
+        background-image: url("images/SocialMedia.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center 10px;
+    }
+
+
+    /* Individual social media rows */
+
+    .social-item {
+        position: absolute;
+
+        display: flex;
+        align-items: center;
+
+        gap: 17px;
+
+        font-family: 'Voltaire', sans-serif;
+        font-size: clamp(0.9rem, 2vw, 1.2rem);
+
+        color: #F7ECFF;
+    }
+
+
+    /* Social media icons */
+
+    .social-item img {
+        width: clamp(25px, 5vw, 35px);
+        height: clamp(25px, 5vw, 35px);
+
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+
+    /* Social media links */
+
+    .social-item a {
+        color: #F7ECFF;
+        text-decoration: none;
+
+        overflow-wrap: anywhere;
+    }
+
+    .social-item a:hover {
+        text-decoration: underline;
+    }
+
+
+    /* Position of each social media item
+       These percentages are relative to the PNG */
+
+    .social-item:nth-child(1) {
+        top: 30%;
+        left: 10%;
+    }
+
+    .social-item:nth-child(2) {
+        top: 45%;
+        left: 10%;
+    }
+
+    .social-item:nth-child(3) {
+        top: 60%;
+        left: 10%;
+    }
+
+
+    /* Phone */
+
+    @media (max-width: 600px) {
+        .hero {
+            min-height: 350px;
+        }
+
+        .contact-box {
+            margin-top: -80px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .social-item {
+            gap: 10px;
+        }
+    }
+
+    .about-section {
+        padding-left: clamp(40px, 8vw, 150px);
+        padding-right: clamp(20px, 5vw, 100px);
+    }
+
+    .about-section h2 {
+        font-family: 'Vampiro One', cursive;
+        font-size: clamp(2rem, 5vw, 3rem);
+        color: #F7ECFF;
+        margin-top: -50px;
+    }
+
+    .about-section p {
+        max-width: 800px;
+
+        font-family: 'Voltaire', sans-serif;
+        font-size: clamp(1rem, 2vw, 1.3rem);
+        line-height: 1.5;
+
+        color: #F7ECFF;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer p {
+        font-family: 'Voltaire', sans-serif;
+        color: #F7ECFF;
+    }
+
+</style>
+
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+    <a href="index.html" class="home-link">
+        <img src="images/Logo.png" alt="Home">
+        <span>Sanyeh</span>
+    </a>
+    <div class="nav-center">
+        <a href="mywork.html">My work</a>
+        <a href="art.html">Art</a>
+        <a href="aboutme.html">About me</a>
+    </div>
+</nav>
+
+
+<main>
+
+
+    <!-- Hero -->
+
+    <header class="hero">
+
+        <h1>
+            Sanyeh
+        </h1>
+
+        <p>
+            Hi! I'm Sanne Johanne Hermansen, a game designer with a passion for shaping games into art
+            and letting emotion drive the journey. Have a look at my work!<br>
+            <a href="mywork.html" class="work-button">My work</a>
+        </p>
+
+    </header>
+
+
+    <!-- Contact box -->
+
+    <section class="contact-box">
+
+
+        <div class="social-item">
+
+            <img src="images/email.png" alt="Email">
+
+            <a href="mailto:sanne012009@live.no">
+                sanne012009@live.no
+            </a>
+
+        </div>
+
+
+        <div class="social-item">
+
+            <img src="images/instagram.png" alt="Instagram">
+
+            <a href="https://www.instagram.com/sannejohanne/">
+                sannejohanne
+            </a>
+
+        </div>
+
+
+        <div class="social-item">
+
+            <img src="images/itch.png" alt="itch.io">
+
+            <a href="https://sanyeh.itch.io/">
+                sanyeh
+            </a>
+
+        </div>
+
+
+    </section>
+   
+    <section class="about-section">
+        
+        <h2>WELCOME TO MY PAGE </h2>
+       <p>
+            I’m a game design student at Kristiania University College in Oslo,
+            passionate about creating interactive experiences that combine art, music, and storytelling.
+            My love for creativity started early, exploring theatre, music, and drawing,
+            and it continues to shape the way I approach games today.<br><br>  I’m fascinated by the
+            inner world and how our emotions respond to the world around us.
+            I aim to create experiences that guide players toward the emotional truths
+            those external experiences evoke, moments of reflection, connection, and imagination.<br><br>
+            Game design gives me a way to combine all of this: visual art, sound, and interactivity,
+            working together to craft meaningful, emotional journeys that players can
+            feel and explore for themselves.
+        </p>
+
+    </section>
+
+
+
+
+</main>
+
+
+<!-- Footer -->
+
+<footer>
+    <p>&copy; 2026 Sanne Johanne Hermansen</p>
+</footer>
+
+</body>
+
+</html>
