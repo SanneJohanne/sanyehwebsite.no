@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Work</title>
+
+<!-- Font import -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vampiro+One&family=Voltaire&display=swap" rel="stylesheet">
+
+
+<style>
+
+html {
+    scroll-behavior: smooth;
+    }
+
+section {
+    scroll-margin-top: 90px;
+}
+
+* {
+        box-sizing: border-box;
+    }
+
+
+    /* General page */
+
+    body {
+        margin: 0;
+        background-color: #1A1A1A;
+    }
+
+
+    /* Navigation */
+
+    nav.main-nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        padding: 15px 20px;
+        background-color: #87719E;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        font-family: 'Voltaire', sans-serif;
+        font-weight: bold;
+        color: #1A1A1A;
+        text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+    nav.main-nav {
+        overflow-x: auto;
+        white-space: nowrap;
+        }
+    }
+  
+    .home-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #F7ECFF;
+        text-decoration: none;
+    }
+
+    .home-link img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        margin: -10px;
+    }
+
+    .home-link span {
+        font-family: 'Vampiro One', cursive;
+        font-size: 1.5rem;
+    }
+    
+    .nav-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+     .nav-center a {
+        font-family: 'Voltaire', sans-serif;
+        font-weight: bold;
+        font-size: clamp(1rem, 1.5vw, 1.2rem);
+        color: #1A1A1A;
+        text-decoration: none;
+    }
+
+    .nav-center a:hover {
+        text-decoration: underline;
+    }
+
+        /* Hero */
+    .work-nav {
+    display: flex;
+    gap: clamp(25px, 5vw, 70px);
+    justify-content: center;
+    margin-top: 50px;
+    }
+
+    .work-nav a {
+        font-family: 'Voltaire', sans-serif;
+        font-size: clamp(0.9rem, 1.3vw, 1.1rem);
+        color: #9DCC9E;
+        text-decoration: none;
+    }
+     .work-nav a:hover {
+        text-decoration: underline;
+     }
+
+    h1 {
+    font-family: 'Vampiro One', cursive;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: #F7ECFF;
+    text-align: center;
+    margin-top: 50px;
+    }
+    
+
+    h2 {
+        font-family: 'Voltaire', sans-serif;
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        color: #F7ECFF;
+        text-align: left;
+    }
+     /* Grid */
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .project-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    }
+
+    .project-card h3 {
+        margin: 15px 0 5px;
+        font-family: 'Voltaire', sans-serif;
+        font-size: 1.5rem;
+        color: #F7ECFF;
+    }
+
+    .project-card p {
+        margin: 0;
+        font-family: 'Voltaire', sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #F7ECFF;
+    }
+
+    @media (max-width: 900px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+        }
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer p {
+        font-family: 'Voltaire', sans-serif;
+        color: #F7ECFF;
+    }
+</style>
+</head>
+
+    
+
+<body>
+    <!-- Navigation -->
+
+    <nav class="main-nav">
+        <a href="index.html" class="home-link">
+            <img src="images/Logo.png" alt="Home">
+            <span>Sanyeh</span>
+        </a>
+        <div class="nav-center">
+            <a href="mywork.html">My work</a>
+            <a href="art.html">Art</a>
+            <a href="aboutme.html">About me</a>
+        </div>
+    </nav>
+    <main>
+        <header class="hero">
+           
+            <h1>MY WORK</h1>
+
+            <nav class="work-nav">
+                <a href="#games">Games</a>
+                <a href="#prototypes">Prototypes</a>
+                <a href="#otherprojects">Other Projects</a>
+            </nav>
+        </header>
+
+        <section id="games">
+            <h2>GAMES</h2>
+            <div class="project-grid">
+
+            <article class="project-card">
+                <img src="images/J1MD.png" alt="Project 1">
+                <h3>JUST ONE MORE DAY</h3>
+                <p>A short description of the project.</p>
+            </article>
+
+            <article class="project-card">
+                <img src="images/TrashPandaSW.png" alt="Project 2">
+                <h3>TRASH PANDA STREETWARS</h3>
+                <p>A short description of the project.</p>
+            </article>
+
+            <article class="project-card">
+                <img src="images/FjordFury.png" alt="Fjord Fury Project">
+                <h3>TROLLS VS VIKINGS - FJORD FURY</h3>
+                <p>
+                    A short description of the project.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <img src="images/TheHerbalQuest.png" alt="Project 4">
+                <h3>THE HERBAL QUEST</h3>
+                <p>Local Multiplayer Racing Game<br> School project</p>
+            </article>
+
+            <article class="project-card">
+                <img src="images/Fortnite.png" alt="Project 5">
+                <h3>DONT REMEMBER</h3>
+                <p>A short description of the project.</p>
+            </article>
+
+            <article class="project-card">
+                <img src="images/Olsok.png" alt="Project 6">
+                <h3>OLSOK</h3>
+                <p>A short description of the project.</p>
+            </article>
+
+    </div>
+        </section>
+
+        <section id="prototypes">
+            <h2>PROTOTYPES</h2>
+            <div class="project-grid">
+
+            <article class="project-card">
+                <img src="images/PlaytestFriday.png" alt="Project 1">
+                <h3>PLAYTEST FRIDAY</h3>
+                <p>A short description of the project.</p>
+            </article>
+
+            <article class="project-card">
+                <img src="images/PvsP.png" alt="Project 2">
+                <h3>PINEAPPLE VS PIZZA</h3>
+                <p>A short description of the project.</p>
+            </article>
+
+            <article class="project-card">
+                <img src="images/QuackAttack.png" alt="Quack Attack Project">
+                <h3>QUACK ATTACK</h3>
+                <p>
+                    A short description of the project.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <img src="images/CookieClicker.png" alt="Project 4">
+                <h3>COOKIE CLICKER KICKFLIPPER</h3>
+                <p>Local Multiplayer Racing Game<br> School project</p>
+            </article>
+
+            <article class="project-card">
+                <img src="images/PLC.png" alt="Project 5">
+                <h3>PLC OVERRIDE - ELEVATOR CONTROL</h3>
+                <p>A short description of the project.</p>
+            </article>
+
+
+    </div>
+        </section>
+
+        <section id="otherprojects">
+            <h2>OTHER PROJECTS</h2>
+            <div class="project-grid">
+
+            <article class="project-card">
+                <img src="images/FootballIsland.png" alt="Project 1">
+                <h3>FOOTBALL ISLAND - KING OF THE JUNGLE</h3>
+                <p>A short description of the project.</p>
+            </article>
+
+            <article class="project-card">
+                <img src="images/BFT.png" alt="Project 2">
+                <h3>CAMPIGN FOR BATTLEFIELD TOURS</h3>
+                <p>A short description of the project.</p>
+            </article>
+
+            <article class="project-card">
+                <img src="images/BUS.png" alt="Bus Wisky Project">
+                <h3>BUS WISKY - MARKETING PLAN</h3>
+                <p>
+                    A short description of the project.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <img src="images/Curio.png" alt="Project 4">
+                <h3>QUIZ FOR QURIO</h3>
+                <p>Local Multiplayer Racing Game<br> School project</p>
+            </article>
+
+    </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
