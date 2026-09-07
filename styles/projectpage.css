@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Vampiro+One&family=Voltaire&display=swap');
-
 html {
     scroll-behavior: smooth;
     }
@@ -96,7 +94,6 @@ section {
 
 		padding: 50px 20px;
 
-		background-image: url("../images/J1MDHero.png");
 		background-size: cover;
 		background-position: center;
 
@@ -107,7 +104,21 @@ section {
 
 		text-align: center;
 	}
+.hero-j1md {
+    background-image: url("../images/J1MDHero.png");
+}
 
+.hero-trashpandaSW {
+    background-image: url("../images/TrashPandaHero.png");
+}
+
+.hero-FjordFury {
+    background-image: url("../images/FjordFuryHero.png");
+}
+
+.hero-TheHerbalQuest {
+    background-image: url("../images/TheHerbalQuestHero.png");
+}
 
     h1 {
     font-family: 'Vampiro One', cursive;
