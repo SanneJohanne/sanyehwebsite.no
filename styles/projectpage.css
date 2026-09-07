@@ -122,6 +122,27 @@ section {
 .hero-PlaytestFriday {
     background-image: url("../images/PlaytestFridayHero.png");
 }
+.hero-PineapplevsPizza {
+    background-image: url("../images/PineapplevsPizzaHero.png");
+}
+.hero-QuackAttack {
+    background-image: url("../images/QuackAttackHero.png");
+}
+.hero-CookieClicker {
+    background-image: url("../images/CookieClickerHero.png");
+}
+.hero-FootballIsland {
+    background-image: url("../images/FootballIslandHero.png");
+}
+.hero-BattleFieldTour {
+    background-image: url("../images/BattleFieldTourHero.png");
+}
+.hero-BusWhisky {
+    background-image: url("../images/BusWhiskyHero.png");
+}
+.hero-Curio {
+    background-image: url("../images/CurioHero.png");
+}
 
     h1 {
     font-family: 'Vampiro One', cursive;
