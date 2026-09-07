@@ -119,6 +119,9 @@ section {
 .hero-TheHerbalQuest {
     background-image: url("../images/TheHerbalQuestHero.png");
 }
+.hero-PlaytestFriday {
+    background-image: url("../images/PlaytestFridayHero.png");
+}
 
     h1 {
     font-family: 'Vampiro One', cursive;
