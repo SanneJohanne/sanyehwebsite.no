@@ -167,6 +167,10 @@ section {
     margin-bottom: 60px;
 }
 
+.project-row.reverse{
+	grid-template-columns: 1fr 1fr;
+}
+
 .project-row img {
     width: 100%;
     max-width: 400px;
@@ -274,6 +278,19 @@ section {
 		 grid-template-columns: 1fr;
 		 gap:30px;
 	 }
+
+	.project-row.reverse .project-text{
+		order: 1;
+	}
+
+	.project-row.reverse img{
+		order: 2;
+	}
+
+	.project-content{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
 
 	 .hero{
 		 min-height: 250px;
