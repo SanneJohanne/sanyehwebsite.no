@@ -50,12 +50,7 @@
         text-decoration: none;
     }
 
-    @media (max-width: 600px) {
-    nav {
-        overflow-x: auto;
-        white-space: nowrap;
-        }
-    }
+  
   
     .home-link {
         display: flex;
@@ -99,6 +94,34 @@
         text-decoration: underline;
     }
 
+    @media (max-width: 600px) {
+
+    nav {
+        padding: 10px 15px;
+        justify-content: space-between;
+    }
+
+    .home-link img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home-link span {
+        font-size: 1.2rem;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        gap: 20px;
+    }
+
+    .nav-center a {
+        font-size: 0.95rem;
+    }
+
+}
+
     /* Hero title */
 
     h1 {
@@ -111,7 +134,6 @@
         color: #F7ECFF;
         text-align: left;
     }
-
 
     /* Hero section */
 
@@ -246,25 +268,6 @@
         left: 10%;
     }
 
-
-    /* Phone */
-
-    @media (max-width: 600px) {
-        .hero {
-            min-height: 350px;
-        }
-
-        .contact-box {
-            margin-top: -80px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .social-item {
-            gap: 10px;
-        }
-    }
-
     .about-section {
         padding-left: clamp(40px, 8vw, 150px);
         padding-right: clamp(20px, 5vw, 100px);
@@ -299,6 +302,76 @@
         font-family: 'Voltaire', sans-serif;
         color: #F7ECFF;
     }
+
+    /* Phone */
+@media (max-width: 600px) {
+
+    /* Navigation */
+
+    nav {
+        padding: 10px 15px;
+        justify-content: space-between;
+    }
+
+    .home-link img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home-link span {
+        font-size: 1.2rem;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        gap: 20px;
+    }
+
+    .nav-center a {
+        font-size: 0.95rem;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: 350px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+
+    /* Contact box */
+
+    .contact-box {
+        width: 90%;
+        margin: -40px auto 0;
+    }
+
+    .social-item {
+        gap: 8px;
+        font-size: 0.9rem;
+    }
+
+    .social-item img {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    /* About section */
+
+    .about-section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+}
 
 </style>
 
