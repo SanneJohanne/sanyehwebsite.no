@@ -190,6 +190,23 @@ section {
     line-height: 1.4;
     color: #F7ECFF;
 }
+    /*Tablet*/
+        @media (max-width: 900px) {
+            .concept{
+                width: 88%;
+                gap: 40px;
+            }
+        }
+ /*Phone*/
+        @media(max-width: 600px) {
+            .concept{
+                width: 88%;
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+        }
+
+
 
     /* Button */
 .next-button {
