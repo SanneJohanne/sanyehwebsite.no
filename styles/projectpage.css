@@ -279,8 +279,8 @@ section {
     }
 
     .hero {
-        min-height: 250px;
-        background-size: 100% auto;
+        min-height: 350px;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
