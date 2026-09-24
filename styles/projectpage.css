@@ -230,6 +230,33 @@ section {
     }
 
 @media (max-width: 600px) {
+	 /* Navigation */
+
+    nav {
+        padding: 10px 15px;
+        justify-content: space-between;
+    }
+
+    .home-link img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home-link span {
+        font-size: 1.2rem;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        gap: 30px;
+    }
+
+    .nav-center a {
+        font-size: 0.95rem;
+    }
+
+	/*Content-section*/
 
     .project-content {
         padding-left: 25px;
