@@ -273,24 +273,24 @@ section {
     .nav-center a {
         font-size: 0.95rem;
     }
+/*Project sections*/
+	.project-row {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 
-	 .project-row{
-		 grid-template-columns: 1fr;
-		 gap:30px;
-	 }
+    .project-row.reverse .project-text {
+        order: 1;
+    }
 
-	.project-row.reverse .project-text{
-		order: 1;
-	}
+    .project-row.reverse img {
+        order: 2;
+    }
 
-	.project-row.reverse img{
-		order: 2;
-	}
-
-	.project-content{
-		padding-left: 25px;
-		padding-right: 25px;
-	}
+    .project-content {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 
 	 .hero{
 		 min-height: 250px;
