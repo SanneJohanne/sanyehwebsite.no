@@ -248,35 +248,14 @@ section {
 
 @media (max-width: 600px) {
 
-    /* Navigation */
-
-    nav {
-        padding: 10px 15px;
-        justify-content: space-between;
-    }
-
-    .home-link img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .home-link span {
-        font-size: 1.2rem;
-    }
-
-    .nav-center {
-        position: static;
-        transform: none;
-        gap: 30px;
-    }
-
-    .nav-center a {
-        font-size: 0.95rem;
-    }
-/*Project sections*/
-	.project-row {
+    .project-row {
+        display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+
+    .project-row.reverse {
+        grid-template-columns: 1fr;
     }
 
     .project-row.reverse .project-text {
@@ -292,13 +271,10 @@ section {
         padding-right: 25px;
     }
 
-	 .hero{
-		 min-height: 250px;
-		
-		 background-size: 100% auto;
-		 background-repeat: no-repeat;
-		 background-position: center;
-	 }
-
+    .hero {
+        min-height: 250px;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
-
