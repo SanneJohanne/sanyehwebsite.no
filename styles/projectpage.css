@@ -167,9 +167,6 @@ section {
     margin-bottom: 60px;
 }
 
-.project-row.reverse{
-	grid-template-columns: 1fr 1fr;
-}
 
 .project-row img {
     width: 100%;
@@ -194,21 +191,7 @@ section {
     line-height: 1.4;
     color: #F7ECFF;
 }
-    /*Tablet*/
-        @media (max-width: 900px) {
-            .concept{
-                width: 88%;
-                gap: 40px;
-            }
-        }
- /*Phone*/
-        @media(max-width: 600px) {
-            .concept{
-                width: 88%;
-                grid-template-columns: 1fr;
-                gap: 35px;
-            }
-        }
+
 
 
 
@@ -248,27 +231,24 @@ section {
 
 @media (max-width: 600px) {
 
-    .project-row {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .project-row.reverse {
-        grid-template-columns: 1fr;
-    }
-
-    .project-row.reverse .project-text {
-        order: 1;
-    }
-
-    .project-row.reverse img {
-        order: 2;
-    }
-
     .project-content {
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    .project-row,
+    .project-row.reverse {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .project-row .project-text {
+        order: 1;
+    }
+
+    .project-row img {
+        order: 2;
     }
 
     .hero {
