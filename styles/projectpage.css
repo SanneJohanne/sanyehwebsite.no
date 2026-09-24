@@ -242,7 +242,9 @@ section {
         color: #F7ECFF;
     }
 
- @media (max-width: 600px) {
+@media (max-width: 600px) {
+
+    /* Navigation */
 
     nav {
         padding: 10px 15px;
@@ -261,8 +263,7 @@ section {
     .nav-center {
         position: static;
         transform: none;
-        gap: 50px;
-        margin: 0 auto;
+        gap: 30px;
     }
 
     .nav-center a {
