@@ -192,6 +192,10 @@ section {
     color: #F7ECFF;
 }
 
+.project-text a {
+    color: #9DCC9E;
+}
+
 
 
 
@@ -284,4 +288,9 @@ section {
         background-repeat: no-repeat;
         background-position: center;
     }
-}
+
+    .linkk {
+        color: #9DCC9E;
+        text-decoration: none;
+    }
+}   
